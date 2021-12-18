@@ -1,0 +1,12 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+fig,ax=plt.subplots()
+month_list=["Jul-20","Aug-20","Sep-20","Oct-20","Nov-20","Dec-20","Jan-21","Feb-21","Mar-21","Apr-21"]
+num_list=[14215,14151,13946,14037,14131,14329,21826,22450,22852,23033]
+ax.barh(month_list,10)
+ax.set_yticks(num_list)
+ax.set_xlabel("Number of Person in SNAP")
+ax.set_title("Maui Nui number of person in SNAP")
+plt.bar(month_list, num_list)
+plt.show()
